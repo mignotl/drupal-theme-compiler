@@ -10,6 +10,7 @@
     "require": {},
     "extra": {
         "drupal-scaffold": {
+            "gitignore": false,
             "file-mapping": {
                 "[project-root]/.eslintrc.json": ".eslintrc.json",
                 "[project-root]/.stylelintignore": ".stylelintignore",
