@@ -1,0 +1,51 @@
+{
+    "extends": [
+        "eslint:recommended",
+        "google"
+    ],
+    "env": {
+        "amd": true,
+        "browser": true,
+        "node": true,
+        "jquery": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "globals": {
+        "CKEDITOR": true,
+        "Drupal": true,
+        "drupalSettings": true
+    },
+    "rules": {
+        "max-len": [
+            "warn",
+            {
+                "code": 120
+            }
+        ],
+        "no-console": "off",
+        "multiline-comment-style": [
+            "error",
+            "starred-block"
+        ],
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "no-multiple-empty-lines": [
+            "error",
+            {
+                "max": 1,
+                "maxEOF": 1
+            }
+        ]
+    }
+}

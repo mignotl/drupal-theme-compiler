@@ -1,0 +1,39 @@
+{
+    "name": "theme_compilation",
+    "version": "2.0.0",
+    "description": "Drupal theme compilation",
+    "scripts": {
+        "lint": "npm run lint:js && npm run lint:scss",
+        "lint:js": "eslint -c ./.eslintrc.json web/themes/custom/*/sources/js",
+        "lint:scss": "stylelint web/themes/custom/*/sources/scss",
+        "lint:fix": "npm run lint:fix:js && npm run lint:fix:scss",
+        "lint:fix:js": "npm run lint:js --silent -- --fix",
+        "lint:fix:scss": "npm run lint:scss --silent -- --fix",
+        "dev": "gulp dev",
+        "watch": "gulp dev-watch",
+        "prod": "gulp prod"
+    },
+    "dependencies": {
+        "@babel/preset-env": "^7.12.13",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^7.0.1",
+        "gulp-babel": "^8.0.0",
+        "gulp-babel-minify": "^0.5.1",
+        "gulp-csso": "^4.0.1",
+        "gulp-load-plugins": "^2.0.6",
+        "gulp-sass": "^4.1.0"
+    },
+    "devDependencies": {
+        "eslint": "^7.19.0",
+        "eslint-config-google": "^0.14.0",
+        "eslint-config-recommended": "^4.1.0",
+        "gulp-livereload": "^4.0.2",
+        "gulp-sourcemaps": "^3.0.0",
+        "gulp-wait": "^0.0.2",
+        "stylelint": "^10.1.0",
+        "stylelint-config-rational-order": "^0.1.2",
+        "stylelint-config-standard-scss": "^1.1.0",
+        "stylelint-order": "^4.1.0",
+        "stylelint-scss": "^3.18.0"
+    }
+}

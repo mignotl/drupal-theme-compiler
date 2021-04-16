@@ -1,0 +1,3 @@
+# Ignore generated font files
+/web/themes/custom/*/sources/scss/fonts
+/web/themes/custom/*/sources/scss/abstract/_reset.scss
