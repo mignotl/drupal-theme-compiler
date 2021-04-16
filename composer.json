@@ -1,0 +1,23 @@
+{
+    "name": "mignotl/drupal-theme-compiler",
+    "description": "Scaffolds theme compilation into your Drupal site.",
+    "authors": [
+        {
+            "name": "Lucas Mignot",
+            "email": "lucas.migt@gmail.com"
+        }
+    ],
+    "require": {},
+    "extra": {
+        "drupal-scaffold": {
+            "file-mapping": {
+                "[project-root]/.eslintrc.json": ".eslintrc.json",
+                "[project-root]/.stylelintignore": ".stylelintignore",
+                "[project-root]/.stylelintrc.json": ".stylelintrc.json",
+                "[project-root]/gulpfile.js": "gulpfile.js",
+                "[project-root]/package-lock.json": "package-lock.json",
+                "[project-root]/package.json": "package.json"
+            }
+        }
+    }
+}
