@@ -12,12 +12,18 @@
         "drupal-scaffold": {
             "gitignore": false,
             "file-mapping": {
-                "[project-root]/.eslintrc.json": ".eslintrc.json",
-                "[project-root]/.stylelintignore": ".stylelintignore",
-                "[project-root]/.stylelintrc.json": ".stylelintrc.json",
-                "[project-root]/gulpfile.js": "gulpfile.js",
-                "[project-root]/package-lock.json": "package-lock.json",
-                "[project-root]/package.json": "package.json"
+                "[web-root]/.csslintrc": false,
+                "[web-root]/.eslintignore": false,
+                "[web-root]/.eslintrc.json": false,
+                "[project-root]/.eslintrc.json": "linters/.eslintrc.json",
+                "[project-root]/.stylelintignore": "linters/.stylelintignore",
+                "[project-root]/.stylelintrc.json": "linters/.stylelintrc.json",
+                "[project-root]/gulpfile.js": "compiler/gulpfile.js",
+                "[project-root]/package-lock.json": "npm/package-lock.json",
+                "[project-root]/package.json": "npm/package.json",
+                "[project-root]/.gitignore": {
+                    "append": ".gitignore-append"
+                }
             }
         }
     }

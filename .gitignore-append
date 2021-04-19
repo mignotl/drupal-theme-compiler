@@ -1,0 +1,4 @@
+
+# Ignore front directories
+/node_modules
+/web/themes/custom/*/assets
